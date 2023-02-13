@@ -1,0 +1,67 @@
+.container {
+  border-radius: 6px;
+  display: block;
+  padding: 10px;
+  max-width: 650px;
+  background-color: rgba(127, 129, 126, 0.185);
+  margin: 0 auto;
+}
+
+input {
+  border-radius: 20px;
+  border: 1px solid rgba(127, 129, 126, 0.185);
+}
+
+.row {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sun {
+  font-size: 20px;
+}
+hr {
+  color: black;
+  background-color: black;
+}
+.shine {
+  font-size: 55px;
+  position: relative;
+  top: -15px;
+}
+#number {
+  font-size: 60px;
+  position: relative;
+  top: -15px;
+  width: bold;
+}
+#celcius {
+  position: relative;
+  top: 5px;
+  left: -25px;
+}
+.week {
+  height: 160px;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+#city {
+  font-size: 40px;
+}
+#current-button {
+  padding: 6px 20px;
+  border-radius: 6px;
+  border: green;
+  color: white;
+  background: green;
+}
+#submit-input {
+  background: rgb(248, 248, 93);
+  padding: 4px 14px;
+}
+#city-input {
+  padding: 4px 10px;
+}
+ul {
+  list-style: none;
+}
