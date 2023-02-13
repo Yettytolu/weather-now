@@ -5,59 +5,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link  rel= "stylesheet" href="src/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-
-    
   </head>
-  <body> 
+  <body>
     <div class="container">
       <h5 id="search">
-       
-          <form>
-      
-            <input type="text" placeholder="Enter a city" autofocus="on autocomplete="off"
-            id="city-input" 
-            />
-            <input type="submit" value="Search" id="submit-input" />
-          
-          
-              <button id="current-button">
-                Current
-              </button>
-            </form>
-           
-            
-        
+        <form>
+          <input type="text" placeholder="Enter a city" autofocus="on
+          autocomplete="off" id="city-input" />
+          <input type="submit" value="Search" id="submit-input" />
+
+          <button id="current-button">Current</button>
+        </form>
+
         <div>
-            <span id="city"></span>
+          <span id="city"></span>
         </div>
         <p>Update a few minutes ago</p>
       </h5>
-      
+
       <div class="section">
         <div class="row">
           <div class="col-3"><span class="shine">🌤</span></div>
-          <div class="col-1"><span id="number"><strong></strong></span>
+          <div class="col-1">
+            <span id="number"><strong></strong></span>
           </div>
-            <div class="col-3"><span id="celcius">°C</span>
-          </div>
-        
-
-            
-            
+          <div class="col-3"><span id="celcius">°C</span></div>
 
           <div class="col-5">
             <ul>
-            <li>Wind: <span id="windval">4</span>mph</li>
-            <li>Humidity: <span id="humid">68</span>%</li>
+              <li>Wind: <span id="windval">4</span>mph</li>
+              <li>Humidity: <span id="humid">68</span>%</li>
             </ul>
           </div>
         </div>
-        <h4><span id="description"></span> </h4>
+        <h4><span id="description"></span></h4>
         <br />
-        <p class="sun"> Sat, march 7, 2023.<br/> 5.14PM</p>
+        <p class="sun">
+          Sat, march 7, 2023.<br />
+          5.14PM
+        </p>
         <div class="row">
           <div class="col">4PM</div>
           <div class="col">7PM</div>
@@ -71,13 +65,26 @@
         <hr />
         <br />
         <div class="row">
-        <div class="col"><div class="week">Sat 7<br />🌤<br />38°<br />30°</div></div>
-        <div class="col"><div class="week">Sun 8<br />🌦<br />36°<br />27°</div></div>
-        <div class="col"><div class="week">Mon 9<br />🌨<br />46°<br />32°</div></div>
-        <div class="col"><div class="week">Tue 10<br />🌥<br />52°<br />32°</div></div>
-        <div class="col"><div class="week">Wed 11<br />☀<br />49°<br />40°</div></div>
+          <div class="col">
+            <div class="week">Sat 7<br />🌤<br />38°<br />30°</div>
+          </div>
+          <div class="col">
+            <div class="week">Sun 8<br />🌦<br />36°<br />27°</div>
+          </div>
+          <div class="col">
+            <div class="week">Mon 9<br />🌨<br />46°<br />32°</div>
+          </div>
+          <div class="col">
+            <div class="week">Tue 10<br />🌥<br />52°<br />32°</div>
+          </div>
+          <div class="col">
+            <div class="week">Wed 11<br />☀<br />49°<br />40°</div>
+          </div>
+        </div>
       </div>
     </div>
+    Coded by Yetunde Ogunremi
+    <a href="https://github.com/Yettytolu/weather-now">Github</a>
     <script src="src/index.js"></script>
   </body>
 </html>
