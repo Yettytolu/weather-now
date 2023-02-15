@@ -18,8 +18,13 @@
     <div class="container">
       <h5 id="search">
         <form>
-          <input type="text" placeholder="Enter a city" autofocus="on
-          autocomplete="off" id="city-input" />
+          <input
+            type="text"
+            placeholder="Enter a city"
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+          />
           <input type="submit" value="Search" id="submit-input" />
 
           <button id="current-button">Current</button>
@@ -33,13 +38,14 @@
 
       <div class="section">
         <div class="row">
-          <div class="col-3"><span class="shine">🌤</span></div>
-          <div class="col-1">
-            <span id="number"><strong></strong></span>
+          <div class="col-6">
+            <div class="shine">
+              🌤
+              <span id="number">4</span><span id="celcius">°C</span>
+            </div>
           </div>
-          <div class="col-3"><span id="celcius">°C</span></div>
 
-          <div class="col-5">
+          <div class="col-4">
             <ul>
               <li>Wind: <span id="windval">4</span>mph</li>
               <li>Humidity: <span id="humid">68</span>%</li>
@@ -83,8 +89,15 @@
         </div>
       </div>
     </div>
-    Coded by Yetunde Ogunremi
-    <a href="https://github.com/Yettytolu/weather-now">Github</a>
+
+    <div id="link">
+      Coded by Yetunde Ogunremi<a
+        href="https://github.com/Yettytolu/weather-now"
+      >
+        Github</a
+      >
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>

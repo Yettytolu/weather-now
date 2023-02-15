@@ -2,9 +2,9 @@
   border-radius: 6px;
   display: block;
   padding: 10px;
-  max-width: 650px;
+  max-width: 600px;
   background-color: rgba(127, 129, 126, 0.185);
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 input {
@@ -29,15 +29,15 @@ hr {
   top: -15px;
 }
 #number {
-  font-size: 60px;
+  font-size: 50px;
   position: relative;
-  top: -15px;
-  width: bold;
+  top: 2px;
 }
 #celcius {
+  font-size: 20px;
   position: relative;
-  top: 5px;
-  left: -25px;
+  top: -20px;
+  left: -4px;
 }
 .week {
   height: 160px;
@@ -64,4 +64,9 @@ hr {
 }
 ul {
   list-style: none;
+}
+#link {
+  position: relative;
+  top: -30px;
+  left: 58px;
 }
