@@ -1,10 +1,10 @@
 .container {
-  border-radius: 6px;
+  border-radius: 10px;
   display: block;
   padding: 10px;
   max-width: 600px;
   background-color: rgba(127, 129, 126, 0.185);
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 input {
@@ -22,6 +22,7 @@ input {
 hr {
   color: black;
   background-color: black;
+  margin-bottom: 0px;
 }
 .shine {
   font-size: 55px;
@@ -40,16 +41,16 @@ hr {
   left: -4px;
 }
 .week {
-  height: 160px;
-  width: 100px;
-  padding: 10px;
+  height: 130px;
+  width: 80px;
+  padding: 6px;
   text-align: center;
 }
 #city {
-  font-size: 40px;
+  font-size: 30px;
 }
 #current-button {
-  padding: 6px 20px;
+  padding: 4px 20px;
   border-radius: 6px;
   border: green;
   color: white;
@@ -60,13 +61,18 @@ hr {
   padding: 4px 14px;
 }
 #city-input {
-  padding: 4px 10px;
+  padding: 3px 20px;
+  border-color: white;
 }
 ul {
   list-style: none;
 }
 #link {
+  margin: 40px auto;
+  max-width: 600px;
   position: relative;
-  top: -30px;
-  left: 58px;
+  top: -45px;
+}
+form {
+  margin-top: 8px;
 }
