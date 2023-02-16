@@ -3,7 +3,7 @@
   display: block;
   padding: 10px;
   max-width: 600px;
-  background-color: rgba(127, 129, 126, 0.185);
+  background-color: rgba(174, 235, 143, 0.185);
   margin: 40px auto;
 }
 
@@ -57,12 +57,14 @@ hr {
   background: green;
 }
 #submit-input {
-  background: rgb(248, 248, 93);
+  background: rgb(214, 214, 45);
   padding: 4px 14px;
+  border-radius: 6px;
 }
 #city-input {
   padding: 3px 20px;
   border-color: white;
+  border-radius: 6px;
 }
 ul {
   list-style: none;
