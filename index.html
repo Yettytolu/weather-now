@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="container">
-      <h5 id="search">
+      <div id="search">
         <form>
           <input
             type="text"
@@ -34,15 +34,20 @@
         <div>
           <span id="city"></span>
         </div>
-        <p>Update a few minutes ago</p>
-      </h5>
+        <div id="update">
+          last updated: <span id="sun"> Sat, march 7, 2023. 5.14PM </span>
+        </div>
+      </div>
+      <br />
 
       <div class="section">
         <div class="row">
           <div class="col-6">
-            <div class="shine">
-              🌤
-              <span id="number">4</span><span id="celcius">°C</span>
+            <div>
+              <span id="icon">🌤</span>
+              <span id="number">4</span><span id="celcius">°C</span
+              ><span id="stroke">|</span
+              ><span id="fahrenheit"> <a href="#">°F</a></span>
             </div>
           </div>
 
@@ -53,12 +58,11 @@
             </ul>
           </div>
         </div>
-        <h4><span id="description"></span></h4>
+        <div>
+          <span id="description">Sunny</span>
+        </div>
         <br />
-        <p class="sun">
-          Sat, march 7, 2023.<br />
-          5.14PM
-        </p>
+
         <div class="row">
           <div class="col">4PM</div>
           <div class="col">7PM</div>

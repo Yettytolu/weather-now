@@ -24,6 +24,9 @@ hr {
   background-color: black;
   margin-bottom: 0px;
 }
+#update {
+  font-size: 20px;
+}
 .shine {
   font-size: 55px;
   position: relative;
@@ -39,6 +42,18 @@ hr {
   position: relative;
   top: -20px;
   left: -4px;
+}
+#fahrenheit {
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left: -4px;
+}
+#stroke {
+  font-size: 20px;
+  position: relative;
+  top: -21px;
+  left: -3px;
 }
 .week {
   height: 130px;
@@ -74,6 +89,9 @@ ul {
   max-width: 600px;
   position: relative;
   top: -45px;
+}
+#icon {
+  font-size: 50px;
 }
 form {
   margin-top: 8px;
