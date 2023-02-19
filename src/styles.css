@@ -3,15 +3,9 @@
   display: block;
   padding: 10px;
   max-width: 600px;
-  background-color: rgba(174, 235, 143, 0.185);
+  background-color: rgba(123, 151, 109, 0.185);
   margin: 40px auto;
 }
-
-input {
-  border-radius: 20px;
-  border: 1px solid rgba(127, 129, 126, 0.185);
-}
-
 .row {
   font-size: 20px;
   font-weight: 400;
@@ -37,24 +31,13 @@ hr {
   position: relative;
   top: 2px;
 }
-#celcius {
+#unit {
   font-size: 20px;
   position: relative;
   top: -20px;
-  left: -4px;
+  left: 1px;
 }
-#fahrenheit {
-  font-size: 20px;
-  position: relative;
-  top: -20px;
-  left: -4px;
-}
-#stroke {
-  font-size: 20px;
-  position: relative;
-  top: -21px;
-  left: -3px;
-}
+
 .week {
   height: 130px;
   width: 80px;
@@ -75,6 +58,7 @@ hr {
   background: rgb(214, 214, 45);
   padding: 4px 14px;
   border-radius: 6px;
+  border: rgb(214, 214, 45);
 }
 #city-input {
   padding: 3px 20px;
@@ -95,4 +79,14 @@ ul {
 }
 form {
   margin-top: 8px;
+}
+.section .active {
+  cursor: default;
+  color: #212529;
+}
+.section .active:hover {
+  text-decoration: none;
+}
+#description {
+  font-size: 20px;
 }

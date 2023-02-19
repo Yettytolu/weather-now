@@ -39,22 +39,24 @@ today.innerHTML = `${day}, ${month} ${date}, ${year}. ${hours}:${minutes}`;
 //
 function showResponse(response) {
   let cityName = document.querySelector("#city");
-  let temperature = document.querySelector("#number");
-  let humidity = document.querySelector("#humid");
-  let wind = document.querySelector("#windval");
-  let descrip = document.querySelector("#description");
+  let temperatureElement = document.querySelector("#number");
+  let humidityElement = document.querySelector("#humid");
+  let windElement = document.querySelector("#windval");
+  let descripElement = document.querySelector("#description");
   let icon = document.querySelector("#icon");
-  let temperaturevalue = Math.round(response.data.main.temp);
-  let humidityvalue = Math.round(response.data.main.humidity);
-  let windvalue = Math.round(response.data.wind.speed);
-  let descriptionvalue = response.data.weather[0].main;
-  let cityvalue = response.data.name;
-  temperature.innerHTML = temperaturevalue;
-  humidity.innerHTML = humidityvalue;
-  wind.innerHTML = windvalue;
-  descrip.innerHTMl = descriptionvalue;
-  cityName.innerHTML = cityvalue;
-  console.log(response.data);
+  let temperatureValue = Math.round(response.data.main.temp);
+  let humidityValue = Math.round(response.data.main.humidity);
+  let windValue = Math.round(response.data.wind.speed);
+  let descriptionValue = response.data.weather[0].main;
+  let cityValue = response.data.name;
+  temperatureElement.innerHTML = temperatureValue;
+  humidityElement.innerHTML = humidityValue;
+  windElement.innerHTML = windValue;
+  descripElement.innerHTML = descriptionValue;
+  cityName.innerHTML = cityValue;
+
+  celciusTemperature = response.data.main.temp;
+
   icon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -72,9 +74,31 @@ function submitSearch(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
+function displayCelciusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#number");
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#number");
+  fahrenheitLink.classList.add("active");
+  celciusLink.classList.remove("active");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+let celciusTemperature = null;
 
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", submitSearch);
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", displayCelciusTemperature);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 searchCity("Brownsburg");
 
