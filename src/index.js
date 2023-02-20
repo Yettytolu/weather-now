@@ -9,23 +9,23 @@ let days = [
   "Saturday",
 ];
 let day = days[now.getDay()];
-let months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-let month = months[now.getMonth()];
-let year = [now.getFullYear()];
-let date = [now.getDate()];
+//let months = [
+//"January",
+//"February",
+//"March",
+//"April",
+//"May",
+//"June",
+//"July",
+//"August",
+//"September",
+//"October",
+//"November",
+//"December",
+//];
+//let month = months[now.getMonth()];
+//let year = [now.getFullYear()];
+//let date = [now.getDate()];
 let hours = [now.getHours()];
 if (hours < 10) {
   hours = `0${hours}`;
@@ -35,7 +35,7 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 let today = document.querySelector("#sun");
-today.innerHTML = `${day}, ${month} ${date}, ${year}. ${hours}:${minutes}`;
+today.innerHTML = `${day}, ${hours}:${minutes}`;
 //
 function showResponse(response) {
   let cityName = document.querySelector("#city");
