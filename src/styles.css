@@ -38,12 +38,6 @@ hr {
   left: 1px;
 }
 
-.week {
-  height: 130px;
-  width: 80px;
-  padding: 6px;
-  text-align: center;
-}
 #city {
   font-size: 30px;
 }
@@ -89,4 +83,14 @@ form {
 }
 #description {
   font-size: 20px;
+}
+.weather-forecast {
+  margin-top: 12px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 18px;
+}
+.weather-forecast-temperature {
+  font-size: 16px;
 }

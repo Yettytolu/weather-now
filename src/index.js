@@ -36,6 +36,29 @@ if (minutes < 10) {
 }
 let today = document.querySelector("#sun");
 today.innerHTML = `${day}, ${hours}:${minutes}`;
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let dys = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  dys.forEach(function (dy) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-2">
+            <div class="weather-forecast-date">${dy}</div>
+            <img src="#" />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">38° </span>
+              <span class="weather-forecast-temperature-min">30° </span>
+            </div>
+          </div>
+        `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //
 function showResponse(response) {
   let cityName = document.querySelector("#city");
@@ -101,6 +124,7 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 searchCity("Brownsburg");
+displayForecast();
 
 //
 
