@@ -66,7 +66,7 @@ function displayForecast(response) {
 }
 function getForecast(coordinates) {
   let apiKey = "ca0db41e2e878c74a1dfc7ffece370d4";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(displayForecast);
 }
@@ -106,7 +106,7 @@ function showResponse(response) {
 
 function searchCity(city) {
   let apiKey = "ca0db41e2e878c74a1dfc7ffece370d4";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showResponse);
 }
 function submitSearch(event) {
@@ -114,31 +114,9 @@ function submitSearch(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
-function displayCelciusTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#number");
-  celciusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
-}
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#number");
-  fahrenheitLink.classList.add("active");
-  celciusLink.classList.remove("active");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-let celciusTemperature = null;
 
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", submitSearch);
-
-let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", displayCelciusTemperature);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 searchCity("Brownsburg");
 

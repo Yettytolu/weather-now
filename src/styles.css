@@ -21,11 +21,7 @@ hr {
 #update {
   font-size: 20px;
 }
-.shine {
-  font-size: 55px;
-  position: relative;
-  top: -15px;
-}
+
 #number {
   font-size: 50px;
   position: relative;
@@ -41,23 +37,18 @@ hr {
 #city {
   font-size: 30px;
 }
-#current-button {
-  padding: 4px 20px;
-  border-radius: 6px;
-  border: green;
-  color: white;
-  background: green;
-}
+
 #submit-input {
-  background: rgb(214, 214, 45);
-  padding: 4px 20px;
+  background: rgb(151, 179, 216);
+  padding: 6px 24px;
   border-radius: 6px;
   border: rgb(214, 214, 45);
 }
 #city-input {
-  padding: 3px 20px;
   border-color: white;
   border-radius: 6px;
+  width: 70%;
+  display: inline;
 }
 ul {
   list-style: none;
@@ -72,20 +63,15 @@ ul {
   margin: 40px auto;
   max-width: 600px;
   position: relative;
-  top: -45px;
+  top: -40px;
 }
 #icon {
   font-size: 50px;
+  position: relative;
+  top: -11px;
 }
 form {
   margin-top: 8px;
-}
-.section .active {
-  cursor: default;
-  color: #212529;
-}
-.section .active:hover {
-  text-decoration: none;
 }
 #description {
   font-size: 20px;
